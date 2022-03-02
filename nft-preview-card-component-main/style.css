@@ -1,0 +1,153 @@
+@charset "uft-8";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    max-width: 1440px;
+    background-color: hsl(217, 54%, 11%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 10px;
+    max-width: 375px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    transform: scale(0.95);
+}
+
+picture {
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    background-image: url(images/image-equilibrium.jpg);
+    background-position: center center;
+    color: aqua;
+    background-size: contain;
+    position: relative; 
+    margin: 25px 0;   
+    cursor: pointer;
+}
+
+picture:hover  #view{
+    opacity: 1;
+}
+
+img#view {
+    position: absolute;
+    top: 45%;
+    left: 42%;
+    opacity: 0;
+}
+
+img#view:hover {
+    opacity: 1;
+    background-size: auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 35px;
+    
+}
+
+.content h2 {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.content h2:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.content p {
+    font-weight: 300;
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 10px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 15px 0;
+    border-bottom: 0.4px solid hsl(215, 51%, 70%);
+}
+
+.details span {
+    padding: 5px;
+}
+
+.details #eth {
+    font-weight: bold;
+    font-size: 16px;
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.details #days {
+    color: hsl(215, 51%, 70%);
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    padding: 15px 35px;
+}
+
+.footer p {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    color: hsl(215, 51%, 70%);
+}
+
+.footer strong {
+    padding: 0px 3px;
+    cursor: pointer;
+}
+
+.footer strong:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+#img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid white
+}
+
+@media screen and (max-width: 750px) {
+    main {
+        transform: scale(0.8);
+    }
+
+    img#view {
+        position: absolute;
+        top: 45%;
+    }
+}
